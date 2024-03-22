@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<div>
+    <h2>Iniciar Sesión</h2>
+    <form (ngSubmit)="login()">
+      <div>
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" required>
+      </div>
+      <div>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <button type="submit" routerLink="/Home">Iniciar Sesión</button>
+    </form>
+  </div>

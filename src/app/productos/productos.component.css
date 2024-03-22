@@ -1,0 +1,72 @@
+#container {
+  height: 100%;
+  text-align: center;
+}
+.columna {
+  width: 50%;
+  height: 160%;
+  float: left;
+  text-align: center;
+}
+.columna div {
+  height: 25%;
+  width: 99%;
+  margin: 5px;
+  text-align: center;
+}
+.centered-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ececec;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.centered-button-crear {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #47d319;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.centered-button-buscar{
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.centered-button-actualizar{
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d8ac45;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.centered-button-eliminar{
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #db4b35;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.title-nav1{
+  background-color: #2d2a57;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}

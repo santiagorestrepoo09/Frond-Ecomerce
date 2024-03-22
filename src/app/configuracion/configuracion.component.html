@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+
+<h2 class="title-nav1">Configuracion de Usuarios</h2>
+
+ <div id="container">
+     <div class="columna">
+      <div>
+        <label for="name">Nombre:</label>
+        <input class="centered-button" type="text" id="name" name="name" [(ngModel)]="user.name">
+      </div>
+      <div>
+        <div class="col-1" >
+          <label for="Cedula">Cedula</label>
+          <input class="centered-button" type="number" id="Cedula" name="Cedula" [(ngModel)]="user.cedula">
+        </div>
+      </div>
+    </div>
+     <div class="columna">
+      <div>
+        <div class="col-1" >
+          <label for="name">Apellido:</label>
+          <input class="centered-button" type="text" id="apellido" name="apellido" [(ngModel)]="user.apellido">
+        </div>
+      </div>
+      <div>
+        <div class="col-1" >
+          <label for="Contraseña">Contraseña:</label>
+          <input class="centered-button" type="text" id="Contraseña" name="Contraseña" [(ngModel)]="user.password">
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="centered-button-crear" (click)="createUser()">Crear</button>
+      <button class="centered-button-buscar" (click)="readUsers()">Buscar</button>
+      <button class="centered-button-actualizar" (click)="updateUser()">Actualizar</button>
+      <button class="centered-button-eliminar" (click)="deleteUser()">Eliminar</button>
+    </div>
+</div>
+
+      <!-- Botones CRUD -->
+    

@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+<h2 class="title-nav1">Productos</h2>
+
+<div class="#container">
+    <div class="columna">
+      <div>
+        <label for="id">ID:</label>
+        <input class="centered-button" type="text" id="id" name="id" [(ngModel)]="produc.id">
+      </div>
+        <div>
+          <label for="name">Nombre:</label>
+          <input  class="centered-button" type="text" id="name" name="name" [(ngModel)]="produc.name">
+        </div>
+        <div>
+          <label for="name">Cantidad:</label>
+          <input  class="centered-button" type="number" id="cantidad" name="cantidad" [(ngModel)]="produc.cantidad">
+        </div>
+    </div>
+    <div class="columna">
+      <div>
+        <div>
+          <label for="productos">Descipción:</label>
+          <input class="centered-button" type="text" id="Descripcion" name="Descripcion" [(ngModel)]="produc.Descripcion">
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="Precio">Precio:</label>
+          <input class="centered-button" type="number" id="Precio" name="Precio" [(ngModel)]="produc.Precio">
+        </div>
+      </div> 
+      <div>
+        <label for="Categoria">Categoria:</label>
+        <select class="centered-button"name="rol" id="categoria " [(ngModel)]="produc.Categoria">
+          <option>Seleccionar</option>
+          <option>Tecnologia</option>
+          <option>Servicios</option>
+          <option>Hogar</option>
+          <option>Super-Mercado</option>
+        </select>
+      </div>
+    </div>
+    <div style="text-align: center;">
+      <button class="centered-button-crear" (click)="createProducto()">Crear</button>
+      <button class="centered-button-buscar" (click)="readProducto()">Buscar</button>
+      <button class="centered-button-actualizar" (click)="updateProducto()">Actualizar</button>
+      <button class="centered-button-eliminar" (click)="deleteProducto()">Eliminar</button>
+    </div>
+</div>
